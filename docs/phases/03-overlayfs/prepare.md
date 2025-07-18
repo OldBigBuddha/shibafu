@@ -464,3 +464,18 @@ func (lm *LayerManager) PrepareLayer(layerID string) (string, error) {
 - [ ] ストレージ最適化の手法を理解している
 
 これらの知識を身につけることで、Phase 3のOverlayFSを使用したレイヤー管理実装に効果的に取り組むことができます。
+
+---
+
+## 📖 補助教材
+
+Phase 3をより深く理解するために、以下の補助教材を参照することをお勧めします：
+
+- **[OverlayFS - 理論的理解](../../resources/04-storage-systems/overlayfs-theory.md)**
+  - Union Filesystemの概念と歴史的発展
+  - OverlayFSの階層構造と動作原理
+  - Copy-on-Writeメカニズムの理論
+  - 複数階層の統合アルゴリズム
+  - 設計上の権衡と性能考慮事項
+
+この資料は、Phase 3で実装するレイヤー管理システムの基盤となるOverlayFSの理論を深く理解するのに役立ちます。特に、階層化透過性の概念とwhiteoutメカニズムの理解は、効率的なコンテナストレージ実装に不可欠です。

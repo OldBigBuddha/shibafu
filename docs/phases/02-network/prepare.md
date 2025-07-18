@@ -377,3 +377,17 @@ func (nm *NetworkManager) AllocateIP(networkID, containerID string) (net.IP, err
 - [ ] IPアドレス管理の実装方法を理解している
 
 これらの知識を身につけることで、Phase 2のコンテナネットワーク実装に効果的に取り組むことができます。
+
+---
+
+## 📖 補助教材
+
+Phase 2をより深く理解するために、以下の補助教材を参照することをお勧めします：
+
+- **[Linux Bridge と veth - 理論的理解](../../resources/03-networking-concepts/bridge-veth-theory.md)**
+  - Linux Bridgeの内部動作原理
+  - veth pairの仮想ネットワーク接続メカニズム
+  - MACアドレス学習とフレーム転送の理論
+  - スパニングツリープロトコルの動作
+
+この資料は、Phase 2で実装するコンテナネットワークの基盤となる技術を深く理解するのに役立ちます。特に、vethペアとLinux Bridgeの組み合わせによる仮想ネットワーク構築の理論的背景を学ぶことができます。

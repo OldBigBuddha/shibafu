@@ -338,3 +338,26 @@ docker pull alpine:latest
 - [ ] config.jsonの基本構造を理解している
 
 これらの基礎知識を身につけることで、Phase 0の実装課題により深い理解を持って取り組むことができます。
+
+---
+
+## 📖 補助教材
+
+Phase 0をより深く理解するために、以下の補助教材を参照することをお勧めします：
+
+- **[Linux Namespaces - 理論的理解](../../resources/01-linux-kernel-features/namespaces-theory.md)**
+  - 7つのnamespace種別の詳細な動作原理
+  - カーネルレベルでの実装理解
+  - 階層構造と継承関係
+
+- **[Control Groups - 理論的理解](../../resources/01-linux-kernel-features/cgroups-principles.md)**
+  - cgroups v1とv2の違い
+  - リソース制御の理論的基盤
+  - 各コントローラーの動作原理
+
+- **[OCI Specifications - 理論的理解](../../resources/02-container-fundamentals/oci-specifications.md)**
+  - Runtime/Image/Distribution仕様の詳細
+  - 標準化の理論的背景
+  - 相互運用性の原理
+
+これらの資料は、Phase 0で扱うruncやOCIバンドルの理論的背景を深く理解するのに役立ちます。

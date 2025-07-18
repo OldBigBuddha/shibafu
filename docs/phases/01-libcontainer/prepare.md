@@ -351,3 +351,26 @@ func (m *ContainerManager) Create(id string, config *configs.Config) error {
 - [ ] 並行処理とリソース管理の実装ができる
 
 これらの知識を身につけることで、Phase 1のlibcontainerを使用した実装に効果的に取り組むことができます。
+
+---
+
+## 📖 補助教材
+
+Phase 1をより深く理解するために、以下の補助教材を参照することをお勧めします：
+
+- **[Linux Namespaces - 理論的理解](../../resources/01-linux-kernel-features/namespaces-theory.md)**
+  - libcontainerが内部で使用するnamespace機能の詳細
+  - 8つのnamespace種別の動作原理
+  - Goアプリケーションからの制御方法
+
+- **[Control Groups - 理論的理解](../../resources/01-linux-kernel-features/cgroups-principles.md)**
+  - libcontainerのリソース制御機能の基盤
+  - cgroups v1/v2の実装と違い
+  - 各コントローラーの制御理論
+
+- **[OCI Specifications - 理論的理解](../../resources/02-container-fundamentals/oci-specifications.md)**
+  - libcontainerが準拠するOCI Runtime Specification
+  - config.jsonの仕様詳細
+  - 実装間の相互運用性
+
+これらの資料は、libcontainerが提供する抽象化の背景にある技術を深く理解するのに役立ちます。
